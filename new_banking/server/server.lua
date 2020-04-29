@@ -5,6 +5,13 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
+ESX.RegisterServerCallback('bank:GetUserName', function(source, cb)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	local firstname = xPlayer.getName()
+	
+	cb(firstname)
+end)
+
 RegisterServerEvent('bank:deposit')
 AddEventHandler('bank:deposit', function(amount)
     local _source = source

@@ -102,14 +102,15 @@ end)
 --===============================================
 RegisterNetEvent('currentbalance1')
 AddEventHandler('currentbalance1', function(balance)
-	local id = PlayerId()
-	local playerName = GetPlayerName(id)
+	local playerName
 
-	SendNUIMessage({
-		type = "balanceHUD",
-		balance = balance,
-		player = playerName
+	ESX.TriggerServerCallback('bank:GetUserName', function(playerName)
+		SendNUIMessage({
+			type = "balanceHUD",
+			balance = balance,
+			player = playerName
 		})
+	end)
 end)
 --===============================================
 --==           Deposit Event                   ==
@@ -201,7 +202,7 @@ function nearATM()
 	for _, search in pairs(Config.ATM) do
 		local distance = GetDistanceBetweenCoords(search.x, search.y, search.z, playerloc['x'], playerloc['y'], playerloc['z'], true)
 
-		if distance <= 2 then
+		if distance <= 1 then
 			return true
 		end
 	end
