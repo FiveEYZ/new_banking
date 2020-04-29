@@ -1,13 +1,13 @@
 resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
-ui_page('client/html/UI.html') --THIS IS IMPORTENT
+ui_page('html/UI.html') --THIS IS IMPORTENT
 
 server_scripts {  
 	'locale.lua',
 	'locales/en.lua',
 	'locales/tr.lua', 
 	'config.lua',
-	'server.lua'
+	'server/server.lua'
 }
 
 
@@ -21,19 +21,19 @@ client_scripts {
 
 --[[The following is for the files which are need for you UI (like, pictures, the HTML file, css and so on) ]]--
 files {
-	'client/html/UI.html',
-    'client/html/style.css',
-    'client/html/media/font/Bariol_Regular.otf',
-    'client/html/media/font/Vision-Black.otf',
-    'client/html/media/font/Vision-Bold.otf',
-    'client/html/media/font/Vision-Heavy.otf',
-    'client/html/media/img/bg.png',
-    'client/html/media/img/circle.png',
-    'client/html/media/img/curve.png',
-    'client/html/media/img/fingerprint.png',
-    'client/html/media/img/fingerprint.jpg',
-    'client/html/media/img/graph.png',
-    'client/html/media/img/logo-big.png',
-    'client/html/media/img/logo-top.png',
+	'html/UI.html',
+    'html/style.css',
+    'html/media/font/Bariol_Regular.otf',
+    'html/media/font/Vision-Black.otf',
+    'html/media/font/Vision-Bold.otf',
+    'html/media/font/Vision-Heavy.otf',
+    'html/media/img/bg.png',
+    'html/media/img/circle.png',
+    'html/media/img/curve.png',
+    'html/media/img/fingerprint.png',
+    'html/media/img/fingerprint.jpg',
+    'html/media/img/graph.png',
+    'html/media/img/logo-big.png',
+    'html/media/img/logo-top.png',
     'locale.js',
 }
