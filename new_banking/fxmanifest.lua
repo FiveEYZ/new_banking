@@ -1,18 +1,19 @@
-resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
+fx_version 'adamant'
+
+game 'gta5'
 
 ui_page('html/UI.html') --THIS IS IMPORTENT
 
 server_scripts {  
-	'locale.lua',
-	'locales/en.lua',
-	'locales/tr.lua', 
+	'@es_extended/locale.lua',
+	'locales/tr.lua',
+	'locales/en.lua', 
 	'config.lua',
 	'server/server.lua'
 }
 
-
 client_scripts {
-	'locale.lua',
+	'@es_extended/locale.lua',
 	'locales/tr.lua',
 	'locales/en.lua', 
 	'config.lua',
@@ -23,6 +24,7 @@ client_scripts {
 files {
 	'html/UI.html',
     'html/style.css',
+	'html/app.js',
     'html/media/font/Bariol_Regular.otf',
     'html/media/font/Vision-Black.otf',
     'html/media/font/Vision-Bold.otf',
@@ -34,6 +36,5 @@ files {
     'html/media/img/fingerprint.jpg',
     'html/media/img/graph.png',
     'html/media/img/logo-big.png',
-    'html/media/img/logo-top.png',
-    'locale.js',
+    'html/media/img/logo-top.png'
 }
