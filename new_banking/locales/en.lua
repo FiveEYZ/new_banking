@@ -1,5 +1,7 @@
 Locales['en'] = {
     ['invalid_amount'] = 'Invalid Amount',
+    ['deposit'] = 'Deposit',
+    ['withdraw'] = 'Withdraw',
     ['atm_blip'] = 'ATM',
     ['bank_blip'] = 'Bank',
     ['atm_open'] = 'Press ~INPUT_PICKUP~ to access account ~b~',
