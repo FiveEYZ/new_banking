@@ -150,6 +150,16 @@ RegisterNUICallback('transfer', function(data)
 end)
 
 --===============================================
+--==         Invest Event                    ==
+--===============================================
+RegisterNUICallback('invest', function()
+	if(inMenu) then
+		closeUI()
+		exports.esx_invest:openUI()
+	end
+end)
+
+--===============================================
 --==         Result   Event                    ==
 --===============================================
 RegisterNetEvent('bank:result')

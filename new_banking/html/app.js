@@ -51,6 +51,10 @@ $("#transfer").click(function () {
   $("#general").hide();
   $("#transferUI").show();
 });
+$("#invest").click(function () {
+  $("#general").hide();
+  $.post("http://new_banking/invest", JSON.stringify({}));
+});
 
 $("#fingerprint-content").click(function () {
   $(".fingerprint-active, .fingerprint-bar").addClass("active");
