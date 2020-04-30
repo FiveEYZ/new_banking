@@ -1,10 +1,18 @@
 Locales['fr'] = {
-  ['open_bank'] = 'Appuie sur ~INPUT_PICKUP~ pour accèder à tes comptes ~b~',
-  ['invalid'] = 'Montant invalide.',
-  ['deposit'] = 'Dépot effectué.',
-  ['withdraw'] = 'Retrait effectué.',
-  ['user_not_found'] = 'Destinataire introuvable.',
-  ['not_to_self'] = 'Vous ne pouvez pas faire de transfert à vous même.',
-  ['not_enught_money'] = 'Vous n\'avez pas assez d\'argent en banque.',
-  ['success'] = 'Transfert effectué.'
+    ['invalid_amount'] = 'Montant invalide',
+	['deposit_success'] = "Dépôt terminé.",
+    ['withdraw_success'] = "Retrait terminé.",
+    ['atm_blip'] = 'ATM',
+    ['bank_blip'] = 'Bank',
+    ['atm_open'] = 'presse ~INPUT_PICKUP~ pour accéder au compte ~b~',
+    ['no_money'] = 'Vous n\'avez pas assez d\'argent',
+	['destination_unknown'] = "Destinataire introuvable.",
+	['destination_self'] = "Vous ne pouvez pas vous transférer.",
+	['transfer_success'] = "Transfert terminé.",
+    ['recieved1'] = 'Vous avez reçu de l\'argent ',
+    ['recieved2'] = 'Vous avez reçu la somme de ',
+    ['recieved3'] = ' dollars',
+    ['removed1'] = 'Reçu ',
+    ['removed2'] = 'Votre paiement de ',
+    ['removed3'] = ' l\'argent est fait'
 }
