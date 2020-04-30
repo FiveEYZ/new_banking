@@ -233,6 +233,7 @@ function openUI()
 		playAnim('mp_common', 'givetake1_a', Config.AnimationTime)
 		Citizen.Wait(Config.AnimationTime)
 	end
+	TriggerServerEvent('bank:balance')
 	inMenu = true
 	SetNuiFocus(true, true)
 	SendNUIMessage({type = 'openGeneral'})
